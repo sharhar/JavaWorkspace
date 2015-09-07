@@ -2,5 +2,17 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="/home/shahar/Git/JavaWorkspace/Libs/Slick/lib/lwjgl.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="/home/shahar/Git/JavaWorkspace/Libs/lwjgl-2.9.3/native/linux"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/shahar/Git/JavaWorkspace/Libs/Slick/lib/lwjgl_util.jar"/>
+	<classpathentry kind="lib" path="/home/shahar/Git/JavaWorkspace/Libs/Slick2d/lib/jinput.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="/home/shahar/Git/JavaWorkspace/Libs/Slick2d/tools"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/shahar/Git/JavaWorkspace/Libs/Slick2d/lib/slick.jar" sourcepath="/home/shahar/Git/JavaWorkspace/Libs/Slick2d/src"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

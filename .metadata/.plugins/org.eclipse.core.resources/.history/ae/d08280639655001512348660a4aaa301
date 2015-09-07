@@ -1,0 +1,55 @@
+package com.shahar.game;
+
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+import static org.lwjgl.opengl.GL11.*;
+import org.newdawn.slick.AppGameContainer;
+import org.newdawn.slick.BasicGame;
+import org.newdawn.slick.GameContainer;
+import org.newdawn.slick.Graphics;
+import org.newdawn.slick.SlickException;
+
+public class Main extends BasicGame
+{
+	public Main(String gamename)
+	{
+		super(gamename);
+	}
+
+	@Override
+	public void init(GameContainer gc) throws SlickException {}
+
+	@Override
+	public void update(GameContainer gc, int i) throws SlickException {}
+
+	@Override
+	public void render(GameContainer gc, Graphics g) throws SlickException
+	{
+		g.drawString("Howdy!", 100, 100);
+		
+		glBegin(GL_QUADS);
+		
+		glVertex2f(100, 100);
+		glVertex2f(300, 100);
+		glVertex2f(300, 300);
+		glVertex2f(100, 300);
+		
+		glEnd();
+	}
+
+	public static void main(String[] args)
+	{
+		try
+		{
+			AppGameContainer appgc;
+			appgc = new AppGameContainer(new Main("Simple Slick Game"));
+			appgc.setDisplayMode(800, 600, false);
+			appgc.start();
+		}
+		catch (SlickException ex)
+		{
+			Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+		}
+	}
+}
